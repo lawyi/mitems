@@ -1,0 +1,16 @@
+[
+{
+  "modid": "mitems",
+  "name": "More Useful Items",
+  "description": "Lawyi's More Useful Items.",
+  "version": "${version}",
+  "mcversion": "${mcversion}",
+  "url": "http://www.missql.com",
+  "updateUrl": "",
+  "authorList": ["lawyi"],
+  "credits": "The Forge and FML guys, for making this example",
+  "logoFile": "",
+  "screenshots": [],
+  "dependencies": []
+}
+]
