@@ -46,14 +46,24 @@ public class EventLoader {
         }
     }
 
+
+
     private void keepInventory(ListIterator<EntityItem> iter, PlayerDropsEvent event)
     {
+
+        Boolean flag = true;
         while (iter.hasNext()) {
             EntityItem ei = iter.next();
             ItemStack item = ei.getEntityItem();
 
-            if (iskeepItem(item)) {
-                iter.remove();
+            if (iskeepItem(item) && flag) {
+                --item.stackSize;
+                if (item.stackSize > 0) {
+                    if (addToPlayerInventory(event.entityPlayer, item)) {
+                        iter.remove();
+                    }
+                }
+                flag = false;
             } else {
                 if (addToPlayerInventory(event.entityPlayer, item)) {
                     iter.remove();

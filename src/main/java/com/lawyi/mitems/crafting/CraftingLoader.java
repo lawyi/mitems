@@ -27,7 +27,7 @@ public class CraftingLoader {
         });
         // 一捆烈焰棒
         GameRegistry.addShapedRecipe(new ItemStack(ItemLoader.blazeRodGroup), new Object[]{
-                "###", "###", "###", '#', Items.blaze_rod
+                "###", "#*#", "###", '#', Items.blaze_rod, '*', Items.coal
         });
         // 红石苹果
         GameRegistry.addShapedRecipe(new ItemStack(ItemLoader.appleRedstone), new Object[]{
@@ -39,7 +39,7 @@ public class CraftingLoader {
         });
         // 钻石苹果
         GameRegistry.addShapedRecipe(new ItemStack(ItemLoader.appleDiamond), new Object[]{
-                "###", "#*#", "###", '#', Items.diamond, '*', Items.apple
+                "#1#", "#*#", "###", '#', Items.diamond, '*', Items.apple, '1', Blocks.diamond_block
         });
         // 时光沙漏
         GameRegistry.addShapedRecipe(new ItemStack(ItemLoader.timeSandClock), new Object[]{
@@ -60,7 +60,7 @@ public class CraftingLoader {
     {
 
         GameRegistry.addSmelting(new ItemStack(ItemLoader.goldenEgg), new ItemStack(Items.gold_ingot), 0.5F);
-        GameRegistry.addSmelting(new ItemStack(ItemLoader.appleDiamond), new ItemStack(Items.diamond, 8), 0.5F);
+        GameRegistry.addSmelting(new ItemStack(ItemLoader.appleDiamond), new ItemStack(Items.diamond, 9), 0.5F);
 
     }
 
