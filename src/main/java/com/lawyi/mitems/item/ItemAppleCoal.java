@@ -9,15 +9,15 @@ import net.minecraft.potion.PotionEffect;
 import net.minecraft.world.World;
 
 /**
- * Created by lawyi on 2016/9/5 0005.
+ * Created by lawyi on 2016/9/7 0007.
  */
-public class ItemAppleBlazeRod extends ItemFood {
+public class ItemAppleCoal extends ItemFood {
 
-    public ItemAppleBlazeRod()
+    public ItemAppleCoal()
     {
         super(5, 0.6F, false);
         this.setAlwaysEdible();
-        this.setUnlocalizedName("appleBlazeRod");
+        this.setUnlocalizedName("appleCoal");
         this.setCreativeTab(CreativeTabsLoader.tabLawyi);
     }
 
@@ -26,11 +26,9 @@ public class ItemAppleBlazeRod extends ItemFood {
     {
         if (!worldIn.isRemote) {
             // 防火
-            player.addPotionEffect(new PotionEffect(Potion.fireResistance.id, 6000, 4));
-            // 夜视
-            player.addPotionEffect(new PotionEffect(Potion.nightVision.id, 2400));
-            // 自燃
-            player.setFire(60);
+            player.addPotionEffect(new PotionEffect(Potion.fireResistance.id, 2400, 3));
+            // 失明
+            player.addPotionEffect(new PotionEffect(Potion.blindness.id, 100));
         }
 
         super.onFoodEaten(stack, worldIn, player);

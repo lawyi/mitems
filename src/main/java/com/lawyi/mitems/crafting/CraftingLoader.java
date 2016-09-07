@@ -41,6 +41,10 @@ public class CraftingLoader {
         GameRegistry.addShapedRecipe(new ItemStack(ItemLoader.appleDiamond), new Object[]{
                 "#1#", "#*#", "###", '#', Items.diamond, '*', Items.apple, '1', Blocks.diamond_block
         });
+        // 煤炭苹果
+        GameRegistry.addShapedRecipe(new ItemStack(ItemLoader.appleCoal), new Object[]{
+                "###", "#*#", "###", '#', Items.coal, '*', Items.apple
+        });
         // 时光沙漏
         GameRegistry.addShapedRecipe(new ItemStack(ItemLoader.timeSandClock), new Object[]{
                 "313",

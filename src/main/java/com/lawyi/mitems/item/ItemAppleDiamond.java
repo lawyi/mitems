@@ -15,7 +15,7 @@ public class ItemAppleDiamond extends ItemFood {
 
     public ItemAppleDiamond()
     {
-        super(5, 0.6F, false);
+        super(6, 1F, false);
         this.setAlwaysEdible();
         this.setUnlocalizedName("appleDiamond");
         this.setCreativeTab(CreativeTabsLoader.tabLawyi);

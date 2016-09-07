@@ -21,15 +21,18 @@ public class ItemLoader {
     public static ItemFood appleRedstone = new ItemAppleRedstone();
     public static ItemFood appleBlazeRod = new ItemAppleBlazeRod();
     public static ItemFood appleDiamond = new ItemAppleDiamond();
+    public static ItemFood appleCoal = new ItemAppleCoal();
 
     public ItemLoader(FMLPreInitializationEvent event)
     {
         register(goldenEgg, "golden_egg");
         register(blazeRodGroup, "blaze_rod_group");
+        register(timeSandClock, "time_sand_clock");
+
         register(appleRedstone, "apple_redstone");
         register(appleBlazeRod, "apple_blaze_rod");
         register(appleDiamond, "apple_diamond");
-        register(timeSandClock, "time_sand_clock");
+        register(appleCoal, "apple_coal");
     }
 
     @SideOnly(Side.CLIENT)
@@ -37,10 +40,12 @@ public class ItemLoader {
     {
         registerRender(goldenEgg);
         registerRender(blazeRodGroup);
+        registerRender(timeSandClock);
+
         registerRender(appleRedstone);
         registerRender(appleBlazeRod);
         registerRender(appleDiamond);
-        registerRender(timeSandClock);
+        registerRender(appleCoal);
     }
 
     private static void register(Item item, String name)

@@ -38,6 +38,8 @@ public class EventLoader {
             return;
         }
 
+        EntityPlayer player = event.entityPlayer;
+
         ListIterator<EntityItem> iter = event.drops.listIterator();
         if (checkeepInventory(iter)) {
 
@@ -45,7 +47,6 @@ public class EventLoader {
             keepInventory(iter, event);
         }
     }
-
 
 
     private void keepInventory(ListIterator<EntityItem> iter, PlayerDropsEvent event)
