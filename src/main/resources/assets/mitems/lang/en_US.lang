@@ -1,7 +1,9 @@
 item.goldenEgg.name=Golden Egg
 item.blazeRodGroup.name=Blaze Rod Group
 item.appleRedstone.name=Apple Redstone
+item.appleRedstoneEnhanced.name=Apple Redstone Enhanced
 item.appleBlazeRod.name=Apple BlazeRod
 item.appleDiamond.name=Apple Diamond
 item.appleCoal.name=Apple Coal
 item.timeSandClock.name=Time Sand Clock
+itemGroup.lawyi=More Useful Items

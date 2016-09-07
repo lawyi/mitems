@@ -19,6 +19,7 @@ public class ItemLoader {
     public static Item blazeRodGroup = new ItemBlazeRodGroup();
     public static Item timeSandClock = new ItemTimeSandClock();
     public static ItemFood appleRedstone = new ItemAppleRedstone();
+    public static ItemFood appleRedstoneEnhanced = new ItemAppleRedstoneEnhanced();
     public static ItemFood appleBlazeRod = new ItemAppleBlazeRod();
     public static ItemFood appleDiamond = new ItemAppleDiamond();
     public static ItemFood appleCoal = new ItemAppleCoal();
@@ -30,6 +31,7 @@ public class ItemLoader {
         register(timeSandClock, "time_sand_clock");
 
         register(appleRedstone, "apple_redstone");
+        register(appleRedstoneEnhanced, "apple_redstone_enhanced");
         register(appleBlazeRod, "apple_blaze_rod");
         register(appleDiamond, "apple_diamond");
         register(appleCoal, "apple_coal");
@@ -43,6 +45,7 @@ public class ItemLoader {
         registerRender(timeSandClock);
 
         registerRender(appleRedstone);
+        registerRender(appleRedstoneEnhanced);
         registerRender(appleBlazeRod);
         registerRender(appleDiamond);
         registerRender(appleCoal);

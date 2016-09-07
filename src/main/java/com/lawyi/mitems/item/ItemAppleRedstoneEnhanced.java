@@ -9,15 +9,14 @@ import net.minecraft.potion.PotionEffect;
 import net.minecraft.world.World;
 
 /**
- * Created by lawyi on 2016/9/5 0005.
+ * Created by lawyi on 2016/9/7 0007.
  */
-public class ItemAppleDiamond extends ItemFood {
-
-    public ItemAppleDiamond()
+public class ItemAppleRedstoneEnhanced extends ItemFood {
+    public ItemAppleRedstoneEnhanced()
     {
-        super(6, 1F, false);
+        super(10, 2F, false);
         this.setAlwaysEdible();
-        this.setUnlocalizedName("appleDiamond");
+        this.setUnlocalizedName("appleRedstoneEnhanced");
         this.setCreativeTab(CreativeTabsLoader.tabLawyi);
     }
 
@@ -25,14 +24,12 @@ public class ItemAppleDiamond extends ItemFood {
     public void onFoodEaten(ItemStack stack, World worldIn, EntityPlayer player)
     {
         if (!worldIn.isRemote) {
-            // 防火
-            player.addPotionEffect(new PotionEffect(Potion.fireResistance.id, 6000, 4));
             // 再生
-            player.addPotionEffect(new PotionEffect(Potion.regeneration.id, 2400, 4));
+            player.addPotionEffect(new PotionEffect(Potion.regeneration.id, 6000, 4));
             // 挖掘
-            player.addPotionEffect(new PotionEffect(Potion.digSpeed.id, 3000, 4));
-            // 伤害吸收
-            player.addPotionEffect(new PotionEffect(Potion.absorption.id, 2400, 2));
+            player.addPotionEffect(new PotionEffect(Potion.digSpeed.id, 6000, 4));
+            // 移动速度
+            player.addPotionEffect(new PotionEffect(Potion.moveSpeed.id, 6000));
         }
 
         super.onFoodEaten(stack, worldIn, player);

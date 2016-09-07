@@ -33,6 +33,10 @@ public class CraftingLoader {
         GameRegistry.addShapedRecipe(new ItemStack(ItemLoader.appleRedstone), new Object[]{
                 "###", "#*#", "###", '#', Items.redstone, '*', Items.apple
         });
+        // 红石苹果【加强】
+        GameRegistry.addShapedRecipe(new ItemStack(ItemLoader.appleRedstoneEnhanced), new Object[]{
+                "###", "#*#", "###", '#', Blocks.redstone_block, '*', Items.apple
+        });
         // 烈焰苹果
         GameRegistry.addShapedRecipe(new ItemStack(ItemLoader.appleBlazeRod), new Object[]{
                 "###", "#*#", "###", '#', Items.blaze_rod, '*', Items.apple
